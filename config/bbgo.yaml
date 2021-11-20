@@ -1,0 +1,27 @@
+---
+sessions:
+  binance:
+    exchange: binance
+    envVarPrefix: BINANCE
+    #max:
+  #  exchange: max
+  #  envVarPrefix: MAX
+
+backtest:
+  startTime: "2021-11-01"
+  endTime: "2021-11-20"
+  symbols:
+  - BTCUSDT
+  account:
+    makerCommission: 15
+    takerCommission: 15
+    balances:
+      BTC: 0.0
+      USDT: 500.0
+
+exchangeStrategies:
+- on: binance
+  shadow:
+    symbol: "BTCUSDT"
+    interval: 4h
+
