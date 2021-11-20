@@ -4,9 +4,8 @@ import (
 	"context"
 
 	"github.com/sirupsen/logrus"
-
+	"fmt"
 	"github.com/c9s/bbgo/pkg/bbgo"
-	"github.com/c9s/bbgo/pkg/fixedpoint"
 	"github.com/c9s/bbgo/pkg/types"
 )
 
