@@ -2,7 +2,7 @@ package shadow
 
 import (
 	"context"
-	
+	"fmt"
 	"github.com/c9s/bbgo/pkg/bbgo"
 	"github.com/sirupsen/logrus"
 	"github.com/c9s/bbgo/pkg/types"
