@@ -42,10 +42,10 @@ func (s *Strategy) Run(ctx context.Context, orderExecutor bbgo.OrderExecutor, se
 		return fmt.Errorf("market %s is not defined", s.Symbol)
 	}
 
-	standardIndicatorSet, ok := session.StandardIndicatorSet(s.Symbol)
-	if !ok {
-		return fmt.Errorf("standardIndicatorSet is nil, symbol %s", s.Symbol)
-	}
+	// standardIndicatorSet, ok := session.StandardIndicatorSet(s.Symbol)
+	// if !ok {
+	// 	return fmt.Errorf("standardIndicatorSet is nil, symbol %s", s.Symbol)
+	// }
 
 
 	session.MarketDataStream.OnKLineClosed(func(kline types.KLine) {
