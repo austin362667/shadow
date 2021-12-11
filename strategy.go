@@ -2,8 +2,8 @@ package shadow
 
 import (
 	"context"
-
-	log "github.com/sirupsen/logrus"
+	"fmt"
+	"github.com/sirupsen/logrus"
 
 	"github.com/c9s/bbgo/pkg/bbgo"
 	"github.com/c9s/bbgo/pkg/types"
