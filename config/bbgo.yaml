@@ -1,4 +1,17 @@
 ---
+build:
+  dir: build
+  imports:
+  - github.com/austin362667/shadow
+  targets:
+  - name: shadow-amd64-linux
+    os: linux
+    arch: amd64
+  - name: shadow-arm64-darwin
+    os: darwin
+    arch: arm64
+
+---
 sessions:
   binance:
     exchange: binance
